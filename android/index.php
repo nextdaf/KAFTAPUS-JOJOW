@@ -121,7 +121,7 @@ function insert_produk()
             'harga' => '',
             'stok' => '',
             'url_gambar' => '',
-        );
+         );
          $check_match = count(array_intersect_key($_POST, $check));
          if($check_match == count($check)){
          
@@ -160,14 +160,14 @@ function update_produk()
          global $connection;
          if (!empty($_GET["id"])) {
          $id = $_GET["id"];      
-      }   
+         }   
          $check = array(
             'nama' => '',
             'deskripsi' => '',
             'harga' => '',
             'stok' => '',
             'url_gambar' => '',
-        );
+         );
          $check_match = count(array_intersect_key($_POST, $check));         
          if($check_match == count($check)){
          
